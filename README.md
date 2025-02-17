@@ -75,7 +75,7 @@ git push origin main
 
 ## 🛠️ Lo que hay que hacer
 
-1. **Cada miembro trabaja en su rama** (`dev-paviag`, `dev-JeanC221`, `dev-tuusuario`) y sube sus cambios.
+1. **Cada miembro trabaja en su rama** (`dev-paviag`, `dev-JeanC221`, `dev-LofoMarin`) y sube sus cambios.
 2. **Mergear todo en la rama `final`** para integración y prueba.
 3. **Probar el proyecto** en la rama `final`.
 4. **Fusionar `final` con `main`** para tener la versión final estable.
