@@ -6,40 +6,56 @@
         <meta name="description"
             content="Discover our exclusive collection of products with top brands like Arturo Calle, Punto Blanco, Leonisa, and Totto.">
         <title>Shop Products</title>
+        <link href='https://fonts.googleapis.com/css?family=Public Sans' rel='stylesheet'>
+        <link href="jp.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="banner-accent">
             <h1>Shop Products</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </header>
 
-        <main>
-            <section aria-labelledby="filter-heading">
+        <main class="h-flex">
+            <section aria-labelledby="filter-heading" id="left-div">
                 <h2>Filters</h2>
                 <form>
-                    <fieldset>
+                    <fieldset class="v-flex">
                         <legend>Categories</legend>
 
-                        <input type="checkbox" id="jackets" name="jackets" value="jackets" />
-                        <label for="jackets">Jackets</label>
+                        <label for="jackets">
+                            <input type="checkbox" id="jackets" name="jackets" value="jackets" />
+                            Jackets
+                        </label>
 
-                        <input type="checkbox" id="fleece" name="fleece" value="fleece" />
-                        <label for="fleece">Fleece</label>
+                        <label for="fleece">
+                            <input type="checkbox" id="fleece" name="fleece" value="fleece" />
+                            Fleece
+                        </label>
 
-                        <input type="checkbox" id="sweatshirts_hoodies" name="sweatshirts_hoodies" value="sweatshirts_hoodies" />
-                        <label for="sweatshirts_hoodies">Sweatshirts & Hoodies</label>
+                        <label for="sweatshirts_hoodies">
+                            <input type="checkbox" id="sweatshirts_hoodies" name="sweatshirts_hoodies" value="sweatshirts_hoodies" />
+                            Sweatshirts & Hoodies
+                        </label>
 
-                        <input type="checkbox" id="sweaters" name="sweaters" value="sweaters" />
-                        <label for="sweaters">Sweaters</label>
+                        <label for="sweaters">
+                            <input type="checkbox" id="sweaters" name="sweaters" value="sweaters" />
+                            Sweaters
+                        </label>
 
-                        <input type="checkbox" id="shirts" name="shirts" value="shirts" />
-                        <label for="shirts">Shirts</label>
+                        <label for="shirts">
+                            <input type="checkbox" id="shirts" name="shirts" value="shirts" />
+                            Shirts
+                        </label>
 
-                        <input type="checkbox" id="t_shirts" name="t_shirts" value="t_shirts" />
-                        <label for="t_shirts">T-Shirts</label>
+                        <label for="t_shirts">
+                            <input type="checkbox" id="t_shirts" name="t_shirts" value="t_shirts" />
+                            T-Shirts
+                        </label>
 
-                        <input type="checkbox" id="pants_jeans" name="pants_jeans" value="pants_jeans" />
-                        <label for="pants_jeans">Pants & Jeans</label>
+                        <label for="pants_jeans">
+                            <input type="checkbox" id="pants_jeans" name="pants_jeans" value="pants_jeans" />
+                            Pants & Jeans
+                        </label>
                     </fieldset>
                     
                     <fieldset>
@@ -86,62 +102,74 @@
                         </label>
                     </fieldset>
                     
-                    <button type="submit">Apply Filters</button>
+                    <button type="submit" class="light-button">Apply Filters</button>
                 </form>
             </section>
 
-            <section>
-                <div>
-                    <label for="sort-by">Sort By</label>
-                    <select id="sort-by" name="sort-by">
-                        <option value="popular">Popular</option>
-                        <option value="low-to-high">Price (Low to High)</option>
-                        <option value="high-to-low">Price (High to Low)</option>
-                        <option value="recent">Most Recent</option>
-                    </select>
+            <section id="right-div">
+                <div id="right-div-filters">
+                    <div>
+                        <label for="sort-by">Sort By</label>
+                        <select id="sort-by" name="sort-by">
+                            <option value="popular">Popular</option>
+                            <option value="low-to-high">Price (Low to High)</option>
+                            <option value="high-to-low">Price (High to Low)</option>
+                            <option value="recent">Most Recent</option>
+                        </select>
+                    </div>
                     <p>Showing 1003 Products</p>
-
-                    <div role="region" aria-label="Product Grid">
-                        <article>
-                        <img src="../images/placeholder.jpeg" alt="Product Image">
-                        <p>Men's Winter Jacket</p>
-                        <p>M</p>
-                        <p>$99</p>
-                        </article>
-                        <article>
-                        <img src="../images/placeholder.jpeg" alt="Product Image">
-                        <p>Men's Winter Jacket</p>
-                        <p>M</p>
-                        <p>$99</p>
-                        </article>
-                        <article>
-                        <img src="../images/placeholder.jpeg" alt="Product Image">
-                        <p>Men's Winter Jacket</p>
-                        <p>M</p>
-                        <p>$99</p>
-                        </article>
-                        <article>
-                            <img src="../images/placeholder.jpeg" alt="Product Image">
-                            <p>Men's Winter Jacket</p>
-                            <p>M</p>
-                            <p>$99</p>
-                        </article>
-                        <article>
-                            <img src="../images/placeholder.jpeg" alt="Product Image">
-                            <p>Men's Winter Jacket</p>
-                            <p>M</p>
-                            <p>$99</p>
-                        </article>
-                        <article>
-                            <img src="../images/placeholder.jpeg" alt="Product Image">
-                            <p>Men's Winter Jacket</p>
-                            <p>M</p>
-                            <p>$99</p>
-                        </article>
-                    
-                    <button>Load more products</button>
-                    
                 </div>
+                <div role="region" aria-label="Product Grid" id="product-grid">
+                    <article>
+                        <img src="../images/placeholder.jpeg" alt="Product Image">
+                        <div>
+                            <b>Men's Winter Jacket</b>
+                            <p>M</p>
+                        </div>
+                        <p>$99</p>
+                    </article>
+                    <article>
+                        <img src="../images/placeholder.jpeg" alt="Product Image">
+                        <div>
+                            <b>Men's Winter Jacket</b>
+                            <p>M</p>
+                        </div>
+                        <p>$99</p>
+                    </article>
+                    <article>
+                        <img src="../images/placeholder.jpeg" alt="Product Image">
+                        <div>
+                            <b>Men's Winter Jacket</b>
+                            <p>M</p>
+                        </div>
+                        <p>$99</p>
+                    </article>
+                    <article>
+                        <img src="../images/placeholder.jpeg" alt="Product Image">
+                        <div>
+                            <b>Men's Winter Jacket</b>
+                            <p>M</p>
+                        </div>
+                        <p>$99</p>
+                    </article>
+                    <article>
+                        <img src="../images/placeholder.jpeg" alt="Product Image">
+                        <div>
+                            <b>Men's Winter Jacket</b>
+                            <p>M</p>
+                        </div>
+                        <p>$99</p>
+                    </article>
+                    <article>
+                        <img src="../images/placeholder.jpeg" alt="Product Image">
+                        <div>
+                            <b>Men's Winter Jacket</b>
+                            <p>M</p>
+                        </div>
+                        <p>$99</p>
+                    </article> 
+                </div>
+                <button class="light-button">Load more products</button>
             </section>
         </main>
     </body>
